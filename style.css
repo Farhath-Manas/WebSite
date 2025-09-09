@@ -41,6 +41,67 @@ header{
     color: blue;
 }
 
+/* Wrapper */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  font-family: 'Poppins';
+}
+
+/* Button */
+.dropdown-btn {
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgba(8, 8, 8, 0.3);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  min-width: 160px;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: #000;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+  background: rgba(26, 119, 212, 0.61);
+}
+
+/* Show dropdown on hover */
+.language-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 .nav-icon{
     display: flex;
     align-items: center;
@@ -95,7 +156,7 @@ section{
 
 .main-text h1{
     color: #000;
-    font-size: 60px;
+    font-size: 45px;
     text-transform: capitalize;
     line-height: 1.1;
     font-weight: 600;
@@ -191,8 +252,8 @@ header.sticky{
 
 .product-text h5{
     position: absolute;
-    top: 13px;
-    left: 13px;
+    top: 15px;
+    left: 15px;
     color: #fff;
     font-size: 12px;
     font-weight: 500;
@@ -295,7 +356,7 @@ header.sticky{
     }
 }
 
-@media(max-width:890px){
+@media(max-width:1020px){
     .main-text h1{
         font-size: 30px;
         transition: .4s;
@@ -310,7 +371,7 @@ header.sticky{
     }
 }
 
-@media(max-width:750px){
+@media(max-width:1020px){
     .navbar{
         position: absolute;
         top: 100%;
