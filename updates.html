@@ -29,9 +29,9 @@
         <div class="language-dropdown">
             <button class="dropdown-btn">🌐 English</button>
             <div class="dropdown-content">
-                <a href="#" data-lang="en">🌐 English</a>
-                <a href="#" data-lang="si">🇱🇰 සිංහල</a>
-                <a href="#" data-lang="ta">🇮🇳 தமிழ்</a>
+                <a href="#" >🌐 English</a>
+                <a href="#" >🇱🇰 සිංහල</a>
+                <a href="#" >🇮🇳 தமிழ்</a>
             </div>
         </div>
         
@@ -45,8 +45,144 @@
         </div>
 
     </header>
-    
 
-    <script src="script.js"></script>
+    <!-- Hero with 3D Viewer -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Signal Smiles Lab</h1>
+            <p>Where innovation meets oral care. Experience our latest breakthroughs in 3D, AR, and interactive science.</p>
+            <button class="cta-button">Explore the Lab →</button>
+        </div>
+
+        <div id="productViewer">
+            <div id="productCanvas">
+                <img class="img-update" src="./images/signaltoothpaste.png" alt="">
+            </div>
+            <div class="viewer-label">Interactive 3D Toothpaste Tube</div>
+        </div>
+    </section>
+
+    <!-- Live Counter -->
+    <footer>
+        <div class="counter" id="userCounter">0</div>
+        <div class="counter-label">Sri Lankans joined the #BrushWithConfidence Challenge</div>
+    </footer>
+
+    <!-- Before/After Slider Section -->
+    <section class="updates-section">
+        <h2 class="section-title">See the Transformation</h2>
+        <div class="before-after-container">
+            <div class="before-after-image" id="beforeImage"></div>
+            <div class="before-after-image" id="afterImage"></div>
+            <div class="slider-handle" id="sliderHandle"></div>
+        </div>
+    </section>
+
+    <!-- Interactive Modules -->
+    <section class="interactive-modules">
+        <div class="module">
+            <i class="fas fa-flask"></i>
+            <h3>Ingredient Lab</h3>
+            <p>Click on any ingredient to see how it protects your smile.</p>
+            <button class="btn-module" onclick="alert('🧪 Fluoride: Strengthens enamel and prevents cavities!')">Explore Lab</button>
+        </div>
+        <div class="module">
+            <i class="fas fa-headphones"></i>
+            <h3>Brushing Sound Demo</h3>
+            <p>Hear the perfect 2-minute brushing rhythm.</p>
+            <button class="btn-module" onclick="playBrushingSound()">Play Sound</button>
+        </div>
+        <div class="module">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>AR Try-On (Beta)</h3>
+            <p>See how this tube looks in your bathroom!</p>
+            <button class="btn-module" onclick="alert('✨ AR feature requires camera access and HTTPS. Coming soon!')">Try AR</button>
+        </div>
+    </section>
+
+    <!-- Updates Grid -->
+    <section class="updates-section">
+        <h2 class="section-title">Latest Innovations</h2>
+        <div class="updates-grid">
+            <!-- Card 1 -->
+            <div class="update-card">
+                <div class="card-image">
+                    <img src="./images/7.png" alt="Signal Herbal">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">🌿 Herbal Launch</span>
+                    <h3 class="card-title">Aloe Vera Infusion</h3>
+                    <p class="card-excerpt">Our gentlest formula yet, blending Ayurvedic herbs with modern science for sensitive gums.</p>
+                    <a href="#" class="card-cta">Experience It</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="update-card">
+                <div class="card-image">
+                    <img src="./images/14.png" alt="Signal White Now">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">✨ Whitening Tech</span>
+                    <h3 class="card-title">Micro-Polish Crystals</h3>
+                    <p class="card-excerpt">Clinically proven to remove stains 3x faster without damaging enamel. See results in 72 hours.</p>
+                    <a href="#" class="card-cta">See Results</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="update-card">
+                <div class="card-image">
+                    <img src="./images/2.png" alt="Signal Kids">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">🦸 Kids Fun</span>
+                    <h3 class="card-title">Superhero Edition</h3>
+                    <p class="card-excerpt">QR codes unlock brushing songs and games. Makes kids beg to brush!</p>
+                    <a href="#" class="card-cta">Meet the Heroes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section-->
+     <section class="footer">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="./images/signal logo bg.png" alt="">
+                <p>Unilever Sri Lanka <br> 258 M. Vincent PereraMawatha, <br> Colombo 01400, <br> Sri Lanka</p>
+                <p>1323</p>
+                <p>signal12@gmail.com</p>
+                <div class="social-icon">
+                    <a href=""><i class='bx  bxl-facebook'  ></i> </a>
+                    <a href=""><i class='bx  bxl-twitter'  ></i>  </a>
+                    <a href=""><i class='bx  bxl-instagram'  ></i> </a>
+                    <a href=""><i class='bx  bxl-youtube'  ></i> </a>
+                    <a href=""><i class='bx  bxl-linkedin'  ></i> </a>
+                </div>
+            </div>
+            <div class="second-info">
+                <h4>Support</h4>
+                <p>Contact us</p>
+                <p>About page</p>
+                <p>Prodect description</p>
+                <p>User feedback</p>
+            </div>
+            <div class="third-info">
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Affiliate</p>
+                <p>Login</p>
+            </div>
+            <div class="forth-info">
+                <h4>Subscribe</h4>
+                <p>Receive Updates, Hot Deals, discounts Sent Straigh In Your Inbox Daily</p>
+                
+            </div>
+        </div>
+     </section>
+     <div class="end-text">
+        <p>© 2025 Copyright Signal. All Rights Reserved. Designd By Farhath Mana. </p>
+     </div>
 </body>
 </html>
